@@ -3,6 +3,6 @@ module.exports = {
   rules: {
     "react/jsx-props-no-spreading": 0,
     "react/jsx-curley-newline": 0,
-    "indent": ["error", 2]
+    "indent": ["error", 2],
   }
 }
