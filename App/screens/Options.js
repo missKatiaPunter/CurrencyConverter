@@ -7,7 +7,6 @@ import { RowItem, RowSeparator } from '../components/RowItem'
 const Options = () => {
   return (
     <SafeAreaView>
-
       <RowItem
         title="Themes"
         onPress={() => alert('todo!')}
@@ -16,7 +15,7 @@ const Options = () => {
       <RowSeparator />
       <RowItem
         title="React Native Basics"
-        onPress={() => alert('todo!')}
+        onPress={() => console.log("vjhgjhgj")}
         rightIcon={<Entypo name="export" size={20} color={colors.blue} />}
       />
       <RowSeparator />

@@ -27,7 +27,7 @@ export const RowItem = (props) => {
   return(
     <TouchableOpacity
       style={styles.row}
-      nPress={onPress}
+      onPress={onPress}
     >
       <Text style={styles.text}>{title}</Text>
       { rightIcon }
