@@ -31,7 +31,7 @@ const Options = () => {
         <RowSeparator />
         <RowItem
           title="React Native by Example"
-          onPress={() => alert('todo!')}
+          onPress={() => openLink('https://reactnativebyexample.com')}
           rightIcon={<Entypo name="export" size={20} color={colors.blue} />}
         />
       </ScrollView>
