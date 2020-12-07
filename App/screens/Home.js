@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 export default () => {
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle="light-content" backgroundColor={colors.blue} />
     </View>
   )
 };
