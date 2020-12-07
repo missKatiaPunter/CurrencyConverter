@@ -1,8 +1,13 @@
 import React from 'react';
-import { SafeAreaView, ScrollView } from 'react-native';
+import { SafeAreaView, ScrollView, Linking, Alert } from 'react-native';
 import { Entypo } from '@expo/vector-icons';
 import colors from '../constants/colors';
 import { RowItem, RowSeparator } from '../components/RowItem'
+
+const openLink = (url) =>
+  Linking.openURL(url).catch(() =>
+    Alert.alert('Sorry, something went wrong.', 'Please try again later.')
+  );
 
 const Options = () => {
   return (
@@ -16,7 +21,11 @@ const Options = () => {
         <RowSeparator />
         <RowItem
           title="React Native Basics"
-          onPress={() => console.log("vjhgjhgj")}
+          onPress={() =>
+            openLink(
+              'https://learn.reactnativeschool.com/p/react-native-basics-build-a-currency-converter'
+            )
+          }
           rightIcon={<Entypo name="export" size={20} color={colors.blue} />}
         />
         <RowSeparator />
