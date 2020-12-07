@@ -1,6 +1,8 @@
 import React from 'react';
 import { StatusBar, View, StyleSheet } from 'react-native';
 
+// StatusBar is clock, wifi and battery symbols. They are prebuilt dark and light
+
 import colors from '../constants/colors';
 
 const styles = StyleSheet.create({
@@ -12,6 +14,8 @@ const styles = StyleSheet.create({
 
 export default () => {
   return (
-    <View style={styles.container} />
+    <View style={styles.container}>
+      <StatusBar barStyle="light-content" />
+    </View>
   )
 };
