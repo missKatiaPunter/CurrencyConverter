@@ -1,9 +1,13 @@
 import React from 'react';
-import { StatusBar, View, StyleSheet, Image } from 'react-native';
+import { StatusBar, View, StyleSheet, Image, Dimensions } from 'react-native';
 
-// StatusBar is clock, wifi and battery symbols. They are prebuilt dark and light
+// StatusBar is the clock, wifi and battery symbols. They are prebuilt dark and light
 
 import colors from '../constants/colors';
+
+const dims = Dimensions.get("window");
+
+console.log(dims);
 
 const styles = StyleSheet.create({
   container: {
@@ -14,6 +18,7 @@ const styles = StyleSheet.create({
   logoContainer:{
     alignItems: "center",
     justifyContent: "center",
+    marginBottom: 20,
   },
   logoBackground: {
 
