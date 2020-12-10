@@ -9,21 +9,24 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.blue,
     flex: 1,
+    justifyContent: 'center',
   },
   logoContainer:{
-
+    alignItems: "center",
+    justifyContent: "center",
   },
   logoBackground: {
 
   },
   logo: {
-
+    position: "absolute",
   }
 })
 
 export default () => {
   return (
     <View style={styles.container}>
+      <StatusBar barStyle="light-content" backgroundColor={colors.blue} />
       <View style={styles.logoContainer}>
         <Image
           source={require('../assets/images/background.png')}
