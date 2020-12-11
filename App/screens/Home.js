@@ -7,26 +7,27 @@ import colors from '../constants/colors';
 
 const dims = Dimensions.get("window");
 
-console.log(dims);
-
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.blue,
     flex: 1,
+    backgroundColor: colors.blue,
     justifyContent: 'center',
   },
-  logoContainer:{
-    alignItems: "center",
-    justifyContent: "center",
+  logoContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
     marginBottom: 20,
   },
   logoBackground: {
-
+    width: dims.width / 0.45,
+    height: dims.width * 0.45,
   },
   logo: {
-    position: "absolute",
-  }
-})
+    position: 'absolute',
+    width: dims.width * 0.25,
+    height: dims.width * 0.25,
+  },
+});
 
 export default () => {
   return (
