@@ -4,6 +4,7 @@ import { StatusBar, View, StyleSheet, Image, Dimensions } from 'react-native';
 // StatusBar is the clock, wifi and battery symbols. They are prebuilt dark and light
 
 import colors from '../constants/colors';
+import ConversionInput from '../components/ConversionInput';
 
 const dims = Dimensions.get("window");
 
@@ -45,6 +46,7 @@ export default () => {
           resizeMode="contain"
         />
       </View>
+      <ConversionInput />
     </View>
   )
 };
