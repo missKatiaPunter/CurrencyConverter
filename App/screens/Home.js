@@ -1,12 +1,10 @@
-import React from 'react';
-import { StatusBar, View, StyleSheet, Image, Dimensions } from 'react-native';
-
-// StatusBar is the clock, wifi and battery symbols. They are prebuilt dark and light
+mport React from 'react';
+import { View, StyleSheet, StatusBar, Dimensions, Image } from 'react-native';
 
 import colors from '../constants/colors';
-import ConversionInput from '../components/ConversionInput';
+import { ConversionInput } from '../components/ConversionInput';
 
-const dims = Dimensions.get("window");
+const screen = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
@@ -20,13 +18,13 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   logoBackground: {
-    width: dims.width / 0.45,
-    height: dims.width * 0.45,
+    width: screen.width / 0.45,
+    height: screen.width * 0.45,
   },
   logo: {
     position: 'absolute',
-    width: dims.width * 0.25,
-    height: dims.width * 0.25,
+    width: screen.width * 0.25,
+    height: screen.width * 0.25,
   },
 });
 
@@ -46,7 +44,18 @@ export default () => {
           resizeMode="contain"
         />
       </View>
-      <ConversionInput />
+      <ConversionInput
+        text="USD"
+        value="123"
+        onButtonPress={() => alert('todo!')}
+        keyboardType="numeric"
+        onChangeText={(text) => console.log('text', text)}
+      />
+      <ConversionInput
+        text="GBP"
+        value="123"
+        onButtonPress={() => alert('todo!')}
+      />
     </View>
-  )
+  );
 };
