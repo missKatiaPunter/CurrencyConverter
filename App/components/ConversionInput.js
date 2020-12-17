@@ -7,7 +7,7 @@ const ConversionInput = () => {
       <TouchableOpacity>
         <Text>
           {' '}
-          lalala
+          lalalhouhuhhuohhouhu
         </Text>
       </TouchableOpacity>
       
