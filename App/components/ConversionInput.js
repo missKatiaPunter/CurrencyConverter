@@ -5,7 +5,10 @@ const ConversionInput = () => {
   return(
     <View>
       <TouchableOpacity>
-        <Text> Input </Text>
+        <Text>
+          {' '}
+          lalala
+        </Text>
       </TouchableOpacity>
       
     </View>
