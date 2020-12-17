@@ -4,7 +4,7 @@ import { View, Text, TouchableOpacity } from 'react-native';
 const ConversionInput = () => {
   return(
     <View>
-      <TouchableOpacity>
+      <TouchableOpacity sg>
         <Text>
           {' '}
           lalalhouhuhhuohhouhu
